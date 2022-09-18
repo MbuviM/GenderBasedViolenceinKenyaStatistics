@@ -9,7 +9,7 @@ cases = pd.read_csv('sexual_and_gender_based_violence_cases_from_january_2014_to
 print(cases.head(6))
 
 # Plot a graph
-plt.scatter(cases['OBJECTID'], cases['No_of_perpetrators'])
+plt.bar(cases['OBJECTID'], cases['No_of_perpetrators'])
 
 # Adding the graph title
 plt.title('GBV Perpetrators in Nakuru from January 2014 to September 2016')
